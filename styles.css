@@ -1,0 +1,118 @@
+/* ===== GLOBAL ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #1b4332;
+}
+
+.navbar nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1b4332;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #52b788;
+}
+
+/* ===== HERO BACKGROUND ===== */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(46,125,96,0.5), rgba(80,200,170,0.5)),
+    url("https://upload.wikimedia.org/wikipedia/commons/6/69/Baldwin_County_Alabama_farmland.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== MENU LAYOUT ===== */
+
+.menu-container {
+  position: relative;
+  width: 650px;
+  height: 650px;
+}
+
+.menu-card {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1b4332;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.25);
+}
+
+.top-left { top: 0; left: 0; }
+.top-right { top: 0; right: 0; }
+.bottom-left { bottom: 0; left: 0; }
+.bottom-right { bottom: 0; right: 0; }
+
+/* ===== CENTER CIRCLE ===== */
+
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, #40916c, #74c69d);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
